@@ -47,7 +47,7 @@ export default function HeroSection() {
         <div className="hidden sm:grid sm:grid-cols-2 lg:grid-cols-2 gap-6 max-w-2xl mx-auto">
           <div className="glass rounded-2xl p-4 text-center">
             <Users className="w-8 h-8 text-yellow-300 mx-auto mb-2" />
-            <div className="text-2xl font-bold text-white">500+</div>
+            <div className="text-2xl font-bold text-white">300+</div>
             <div className="text-white/80 text-sm">Students</div>
           </div>
           <div className="glass rounded-2xl p-4 text-center">

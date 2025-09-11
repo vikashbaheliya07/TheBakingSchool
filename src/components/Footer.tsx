@@ -108,15 +108,15 @@ export default function Footer() {
               <div className="space-y-3 sm:space-y-4">
                 <div className="flex items-start space-x-3">
                   <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-300 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-300 text-sm sm:text-base">123 Baker Street, Culinary District</span>
+                  <span className="text-gray-300 text-sm sm:text-base">The Baking School, street no. 13, Ajit road, Bathinda, Punjab.</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-300 flex-shrink-0" />
-                  <span className="text-gray-300 text-sm sm:text-base">+1 (555) 123-BAKE</span>
+                  <span className="text-gray-300 text-sm sm:text-base">98763-20800, 99889-92110</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-300 flex-shrink-0" />
-                  <span className="text-gray-300 text-sm sm:text-base">info@bakingschool.com</span>
+                  <span className="text-gray-300 text-sm sm:text-base">ceo@bakingschool.in</span>
                 </div>
               </div>
 

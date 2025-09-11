@@ -65,7 +65,7 @@ export default function CTASection() {
                 <Phone className="w-6 h-6 sm:w-8 sm:h-8 text-black" />
               </div>
               <h3 className="font-bold text-white mb-2 sm:mb-3 text-base sm:text-lg drop-shadow-lg">Call Us</h3>
-              <p className="text-white font-semibold text-sm sm:text-base drop-shadow-md">+1 (555) 123-BAKE</p>
+              <p className="text-white font-semibold text-sm sm:text-base drop-shadow-md">98763-20800, 99889-92110</p>
               <p className="text-white/90 text-xs sm:text-sm mt-1">Available 24/7</p>
             </CardContent>
           </Card>
@@ -76,7 +76,7 @@ export default function CTASection() {
                 <Mail className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
               </div>
               <h3 className="font-bold text-white mb-2 sm:mb-3 text-base sm:text-lg drop-shadow-lg">Email Us</h3>
-              <p className="text-white font-semibold text-sm sm:text-base drop-shadow-md">info@bakingschool.com</p>
+              <p className="text-white font-semibold text-sm sm:text-base drop-shadow-md">ceo@bakingschool.in</p>
               <p className="text-white/90 text-xs sm:text-sm mt-1">Quick Response</p>
             </CardContent>
           </Card>
@@ -87,8 +87,8 @@ export default function CTASection() {
                 <MapPin className="w-6 h-6 sm:w-8 sm:h-8 text-black" />
               </div>
               <h3 className="font-bold text-white mb-2 sm:mb-3 text-base sm:text-lg drop-shadow-lg">Visit Us</h3>
-              <p className="text-white font-semibold text-sm sm:text-base drop-shadow-md">123 Baker Street</p>
-              <p className="text-white/90 text-xs sm:text-sm mt-1">Culinary District</p>
+              <p className="text-white font-semibold text-sm sm:text-base drop-shadow-md">The Baking School, street no. 13, Ajit road</p>
+              <p className="text-white/90 text-xs sm:text-sm mt-1">Bathinda, Punjab.</p>
             </CardContent>
           </Card>
           
@@ -98,8 +98,8 @@ export default function CTASection() {
                 <Clock className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
               </div>
               <h3 className="font-bold text-white mb-2 sm:mb-3 text-base sm:text-lg drop-shadow-lg">Hours</h3>
-              <p className="text-white font-semibold text-sm sm:text-base drop-shadow-md">Mon-Sat: 8AM-8PM</p>
-              <p className="text-white/90 text-xs sm:text-sm mt-1">Sunday: 10AM-6PM</p>
+              <p className="text-white font-semibold text-sm sm:text-base drop-shadow-md">Mon-Sat: 9AM6PM</p>
+              <p className="text-white/90 text-xs sm:text-sm mt-1">Unavailable on Sundays</p>
             </CardContent>
           </Card>
         </div>
@@ -108,7 +108,7 @@ export default function CTASection() {
         <div className="text-center mt-8 sm:mt-16">
           <div className="inline-flex items-center gap-2 text-white/80 text-sm">
             <SparkleIcon className="text-yellow-300" />
-            <span>Join 500+ successful graduates</span>
+            <span>Join 300+ successful bakers</span>
             <SparkleIcon className="text-yellow-300" />
           </div>
         </div>

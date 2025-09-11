@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     question: "What kind of certification do you provide?",
-    answer: "Upon successful completion of our courses, you'll receive a certificate of completion that's recognized in the culinary industry. Our advanced and professional courses also provide certifications that can help you start your own baking business or pursue career opportunities."
+    answer: "We award each student a Nationally Recognized Skill Certificate in Baking, certified by THSC–NCVET under the Skill India Mission, along with ISO 9001:2015 quality standards."
   },
   {
     question: "Can I take courses if I want to start a baking business?",
@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     question: "Do you offer online or only in-person classes?",
-    answer: "We primarily offer in-person classes for the best hands-on learning experience. However, we do have some theoretical sessions and recipe demonstrations available online. Our in-person classes provide the tactile experience essential for mastering baking techniques."
+    answer: "Make sure that we don’t provide online classes or any type of informative content online yet. But we’ll be doing this very soon. "
   },
   {
     question: "What happens if I miss a class?",
@@ -71,7 +71,7 @@ export default function FAQSection() {
             </span>
           </h2>
           <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto">
-            Got questions? We've got answers! Here are the most common questions 
+            Got questions? We have got answers! Here are the most common questions 
             about our baking courses and programs.
           </p>
         </div>

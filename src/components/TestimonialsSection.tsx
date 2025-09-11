@@ -18,48 +18,43 @@ const getChefIcon = (name: string) => {
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
-    role: "Professional Baker",
-    image: "👩‍🍳",
-    rating: 5,
-    text: "This baking school transformed my passion into a successful career. The instructors are incredibly knowledgeable and supportive. I now run my own bakery!"
-  },
-  {
-    name: "Michael Chen",
+    name: "Lovekaran Singh",
     role: "Home Baker",
     image: "👨‍🍳",
     rating: 5,
-    text: "The French Patisserie course was absolutely amazing. I learned techniques I never thought possible. My family is now spoiled with fresh croissants every morning!"
+    text: "The 30 Days 30 Cakes course at The Baking School completely changed my life. With their expert training, supportive staff, and hygienic environment, I learned the skills to start my own home bakery in Jalalabad. Today, I'm earning well at a low investment — all thanks to The Baking School!"
   },
   {
-    name: "Emily Rodriguez",
-    role: "Pastry Chef",
+    name: "Komalpreet Kaur",
+    role: "Home Baker",
     image: "👩‍🍳",
     rating: 5,
-    text: "The wedding cake design course gave me the confidence to start my own cake decorating business. The hands-on experience was invaluable."
+    text: "I completed the 3 Months Professional Baker Course at The Baking School, and it was a turning point in my life. With their guidance and practical training, I started my own home bakery in Bathinda. Now, I'm getting orders from both local customers and social media, and people love my homemade cakes. Making my parents proud and living my dream — all thanks to The Baking School!"
   },
   {
-    name: "David Thompson",
-    role: "Restaurant Owner",
-    image: "👨‍🍳",
-    rating: 5,
-    text: "I enrolled to improve my restaurant's dessert menu. The chocolate course exceeded my expectations. Our dessert sales have increased by 40%!"
-  },
-  {
-    name: "Lisa Park",
-    role: "Career Changer",
+    name: "Beena Rawat",
+    role: "Home Baker",
     image: "👩‍🍳",
     rating: 5,
-    text: "At 45, I decided to follow my dream of becoming a baker. The supportive environment and comprehensive curriculum made the transition smooth and enjoyable."
+    text: "As a preschool teacher, I joined The Baking School and completed the 3 Months Professional Baker Course. The experience was amazing — with cooperative staff and a friendly environment that made learning enjoyable. Now, I run my own home bakery alongside teaching, and after retirement, I plan to go full-time into the baking business. Truly grateful to The Baking School for shaping my future!"
   },
   {
-    name: "James Wilson",
-    role: "Artisan Baker",
+    name: "Manish Middha",
+    role: "Home Baker",
     image: "👨‍🍳",
     rating: 5,
-    text: "The artisan bread making course taught me traditional techniques that have been passed down for generations. My sourdough is now the talk of the neighborhood!"
-  }
+    text: "I completed the 3 Months Professional Baker Course at The Baking School and had a great learning experience. The training and support I received helped me start my own home bakery, and now I'm earning a good side income. Truly thankful to The Baking School for helping me turn my skills into profit!"
+  },
+  {
+    name: "Manish Middha",
+    role: "Home Baker",
+    image: "👨‍🍳",
+    rating: 5,
+    text: " Baking was always my hobby, so I joined The Baking School for the 3 Months Professional Baker Course. The experience was wonderful, with excellent training and guidance. Today, I'm running my own home bakery business in Jalalabad and turning my passion into income. Truly grateful to The Baking School for making it possible! "
+  },
+
 ]
+
 
 export default function TestimonialsSection() {
   return (

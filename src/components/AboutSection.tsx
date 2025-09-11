@@ -9,27 +9,21 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog"
-import { Award, Users, Clock, Heart, ChefHat, Star, MapPin, Phone, Mail, Calendar, Target, Lightbulb } from "lucide-react"
+import { Award, Users, Clock, Heart, ChefHat, Star, MapPin, Phone, Mail, Target, Lightbulb } from "lucide-react"
 import Image from "next/image"
 
 const stats = [
   {
     icon: Users,
-    number: "2,500+",
+    number: "300+",
     label: "Happy Students",
     color: "text-blue-600"
   },
   {
     icon: Award,
-    number: "15+",
-    label: "Years Experience",
+    number: "ISO 9001 2015",
+    label: "Certified Institute",
     color: "text-green-600"
-  },
-  {
-    icon: ChefHat,
-    number: "25+",
-    label: "Expert Instructors",
-    color: "text-purple-600"
   },
   {
     icon: Star,
@@ -57,88 +51,18 @@ const values = [
   }
 ]
 
-const instructors = [
-  {
-    id: 1,
-    name: "Chef Maria Rodriguez",
-    specialty: "French Patisserie & Artisan Breads",
-    experience: "15+ years",
-    education: "Le Cordon Bleu Paris",
-    image: "https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-    bio: "Master pastry chef with expertise in classical French techniques. Former head pastry chef at Michelin-starred restaurants.",
-    achievements: ["James Beard Award Nominee", "World Pastry Championship Finalist", "Author of 'Modern French Baking'"]
-  },
-  {
-    id: 2,
-    name: "Chef Rajesh Kumar",
-    specialty: "Traditional Indian Sweets & Fusion Desserts",
-    experience: "12+ years",
-    education: "Institute of Hotel Management, Mumbai",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-    bio: "Specializes in traditional Indian mithai and innovative fusion desserts that blend Eastern and Western flavors.",
-    achievements: ["National Culinary Award Winner", "Featured in Food & Wine Magazine", "Consultant for 5-star hotels"]
-  },
-  {
-    id: 3,
-    name: "Chef Sarah Thompson",
-    specialty: "Wedding Cakes & Sugar Art",
-    experience: "10+ years",
-    education: "Culinary Institute of America",
-    image: "https://images.unsplash.com/photo-1494790108755-2616c9c0b8d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-    bio: "Award-winning cake designer known for intricate sugar work and stunning wedding cake creations.",
-    achievements: ["International Cake Competition Winner", "Celebrity Wedding Cake Designer", "TV Show Guest Expert"]
-  },
-  {
-    id: 4,
-    name: "Chef Antonio Rossi",
-    specialty: "Italian Pastries & Gelato",
-    experience: "18+ years",
-    education: "Università dei Sapori, Perugia",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-    bio: "Third-generation Italian pastry chef bringing authentic recipes and techniques from his family's bakery in Tuscany.",
-    achievements: ["Gelato World Championship Winner", "Traditional Italian Pastry Master", "Restaurant Owner in Italy"]
-  },
-  {
-    id: 5,
-    name: "Chef Emily Chen",
-    specialty: "Chocolate & Confections",
-    experience: "8+ years",
-    education: "École Chocolat Professional",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-    bio: "Chocolate artisan specializing in bean-to-bar chocolate making and artistic confections.",
-    achievements: ["International Chocolate Awards Winner", "Sustainable Cacao Advocate", "Chocolate Sculpture Artist"]
-  },
-  {
-    id: 6,
-    name: "Chef David Wilson",
-    specialty: "Artisan Breads & Sourdough",
-    experience: "14+ years",
-    education: "San Francisco Baking Institute",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-    bio: "Master baker with deep expertise in fermentation science and traditional bread-making techniques.",
-    achievements: ["Bread Bakers Guild Member", "Sourdough Specialist Certification", "Artisan Bakery Owner"]
-  }
-]
 
 export default function AboutSection() {
   const [showAboutModal, setShowAboutModal] = useState(false)
-  const [showInstructorsModal, setShowInstructorsModal] = useState(false)
 
   const handleLearnMore = () => {
     setShowAboutModal(true)
-  }
-
-  const handleMeetInstructors = () => {
-    setShowInstructorsModal(true)
   }
 
   const handleCloseAboutModal = () => {
     setShowAboutModal(false)
   }
 
-  const handleCloseInstructorsModal = () => {
-    setShowInstructorsModal(false)
-  }
 
   return (
     <>
@@ -205,27 +129,22 @@ export default function AboutSection() {
                 <div className="text-center p-4 rounded-lg bg-blue-50">
                   <ChefHat className="w-12 h-12 text-blue-600 mx-auto mb-3" />
                   <h4 className="font-bold mb-2">Expert Instructors</h4>
-                  <p className="text-sm text-gray-600">Learn from industry professionals with decades of experience</p>
+                  <p className="text-sm text-gray-600">Learn from industry professionals with a decent experience</p>
                 </div>
                 <div className="text-center p-4 rounded-lg bg-green-50">
                   <Award className="w-12 h-12 text-green-600 mx-auto mb-3" />
                   <h4 className="font-bold mb-2">Certified Programs</h4>
                   <p className="text-sm text-gray-600">Industry-recognized certifications that boost your career</p>
                 </div>
-                <div className="text-center p-4 rounded-lg bg-purple-50">
-                  <Users className="w-12 h-12 text-purple-600 mx-auto mb-3" />
-                  <h4 className="font-bold mb-2">Small Class Sizes</h4>
-                  <p className="text-sm text-gray-600">Personalized attention with maximum 12 students per class</p>
-                </div>
                 <div className="text-center p-4 rounded-lg bg-yellow-50">
                   <Clock className="w-12 h-12 text-yellow-600 mx-auto mb-3" />
                   <h4 className="font-bold mb-2">Flexible Scheduling</h4>
-                  <p className="text-sm text-gray-600">Weekend and evening classes to fit your lifestyle</p>
+                  <p className="text-sm text-gray-600">Morning and evening batches to fit your lifestyle</p>
                 </div>
                 <div className="text-center p-4 rounded-lg bg-red-50">
                   <Heart className="w-12 h-12 text-red-600 mx-auto mb-3" />
                   <h4 className="font-bold mb-2">Lifetime Support</h4>
-                  <p className="text-sm text-gray-600">Ongoing mentorship and career guidance after graduation</p>
+                  <p className="text-sm text-gray-600">Ongoing mentorship and career guidance after Course completion</p>
                 </div>
                 <div className="text-center p-4 rounded-lg bg-indigo-50">
                   <Star className="w-12 h-12 text-indigo-600 mx-auto mb-3" />
@@ -242,165 +161,21 @@ export default function AboutSection() {
                 <div className="flex flex-col items-center">
                   <MapPin className="w-8 h-8 text-blue-600 mb-2" />
                   <h4 className="font-semibold mb-1">Location</h4>
-                  <p className="text-sm text-gray-600">123 Baker Street<br />Culinary District<br />Mumbai, India</p>
+                  <p className="text-sm text-gray-600">The Baking School,<br />Street no. 13, Ajit road,<br />  Bathinda, Punjab.</p>
                 </div>
                 <div className="flex flex-col items-center">
                   <Phone className="w-8 h-8 text-green-600 mb-2" />
                   <h4 className="font-semibold mb-1">Phone</h4>
-                  <p className="text-sm text-gray-600">+91 98765 43210<br />+91 98765 43211</p>
-                </div>
+                  <p className="text-sm text-gray-600">98763-20800<br />99889-92110</p>
+                  </div>
                 <div className="flex flex-col items-center">
                   <Mail className="w-8 h-8 text-purple-600 mb-2" />
                   <h4 className="font-semibold mb-1">Email</h4>
-                  <p className="text-sm text-gray-600">info@thebakingschool.com<br />admissions@thebakingschool.com</p>
+                  <p className="text-sm text-gray-600">ceo@thebakingschool.in</p>
                 </div>
               </div>
-            </div>
 
-            {/* Timeline */}
-            <div>
-              <h3 className="text-2xl font-bold mb-6 text-center">Our Journey</h3>
-              <div className="space-y-4">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
-                    <Calendar className="w-6 h-6 text-blue-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-lg">2009 - The Beginning</h4>
-                    <p className="text-gray-600">Started as a small home-based baking studio with just 5 students and a dream to share the art of baking.</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
-                    <Award className="w-6 h-6 text-green-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-lg">2012 - First Certification</h4>
-                    <p className="text-gray-600">Received accreditation from the Culinary Institute of India, establishing our credibility in professional education.</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center flex-shrink-0">
-                    <Users className="w-6 h-6 text-purple-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-lg">2015 - Campus Expansion</h4>
-                    <p className="text-gray-600">Moved to our current 5,000 sq ft facility with state-of-the-art equipment and expanded to serve 200+ students annually.</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-yellow-100 flex items-center justify-center flex-shrink-0">
-                    <Star className="w-6 h-6 text-yellow-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-lg">2020 - Digital Innovation</h4>
-                    <p className="text-gray-600">Launched online courses and hybrid learning programs, making our education accessible nationwide during the pandemic.</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0">
-                    <Heart className="w-6 h-6 text-red-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-lg">2024 - Community Impact</h4>
-                    <p className="text-gray-600">Proud to have trained over 2,500 students, with 85% successfully starting their own businesses or advancing their culinary careers.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
-        </DialogContent>
-      </Dialog>
-
-      {/* Meet Our Instructors Modal */}
-      <Dialog open={showInstructorsModal} onOpenChange={handleCloseInstructorsModal}>
-        <DialogContent className="max-w-6xl max-h-[90vh] overflow-y-auto">
-          <DialogHeader>
-            <DialogTitle className="text-3xl font-bold text-center mb-6">
-              Meet Our Expert Instructors
-            </DialogTitle>
-            <p className="text-center text-gray-600 mb-8">
-              Learn from world-class chefs and industry professionals who bring decades of experience 
-              and passion to every class.
-            </p>
-          </DialogHeader>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {instructors.map((instructor) => (
-              <Card key={instructor.id} className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                <div className="relative h-64 bg-gray-200">
-                  <Image
-                    src={instructor.image}
-                    alt={`${instructor.name} - ${instructor.specialty}`}
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    className="object-cover transition-transform duration-300 hover:scale-105"
-                    priority={instructor.id <= 3}
-                    placeholder="blur"
-                    blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement;
-                      target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(instructor.name)}&size=400&background=f3f4f6&color=374151&format=png`;
-                    }}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
-                  <div className="absolute bottom-4 left-4 right-4 text-white">
-                    <h3 className="text-xl font-bold mb-1 drop-shadow-lg">{instructor.name}</h3>
-                    <p className="text-sm text-white/95 drop-shadow-md">{instructor.specialty}</p>
-                  </div>
-                </div>
-                
-                <CardContent className="p-6">
-                  <div className="space-y-4">
-                    <div className="flex items-center justify-between text-sm text-gray-600">
-                      <span className="flex items-center gap-1">
-                        <Clock className="w-4 h-4" />
-                        {instructor.experience}
-                      </span>
-                      <span className="flex items-center gap-1">
-                        <Award className="w-4 h-4" />
-                        Expert
-                      </span>
-                    </div>
-                    
-                    <div>
-                      <h4 className="font-semibold text-gray-900 mb-1">Education</h4>
-                      <p className="text-sm text-gray-600">{instructor.education}</p>
-                    </div>
-                    
-                    <div>
-                      <h4 className="font-semibold text-gray-900 mb-2">About</h4>
-                      <p className="text-sm text-gray-600 leading-relaxed">{instructor.bio}</p>
-                    </div>
-                    
-                    <div>
-                      <h4 className="font-semibold text-gray-900 mb-2">Key Achievements</h4>
-                      <ul className="space-y-1">
-                        {instructor.achievements.map((achievement, index) => (
-                          <li key={index} className="text-xs text-gray-600 flex items-start gap-2">
-                            <Star className="w-3 h-3 text-yellow-500 mt-0.5 flex-shrink-0" />
-                            {achievement}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-          
-          <div className="mt-8 text-center">
-            <div className="bg-blue-50 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Join Our Teaching Team</h3>
-              <p className="text-gray-600 mb-4">
-                Are you a professional chef or baker interested in sharing your expertise? 
-                We&apos;re always looking for passionate instructors to join our team.
-              </p>
-              <Button className="gradient-yellow-blue text-white">
-                Apply to Teach
-              </Button>
-            </div>
           </div>
         </DialogContent>
       </Dialog>
@@ -462,19 +237,12 @@ export default function AboutSection() {
                 >
                   Learn More About Us
                 </Button>
-                <Button 
-                  variant="outline" 
-                  className="border-gray-300 text-gray-700 hover:bg-gray-50 px-6 py-3 rounded-full"
-                  onClick={handleMeetInstructors}
-                >
-                  Meet Our Instructors
-                </Button>
               </div>
             </div>
           </div>
 
           {/* Stats Section */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-16">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-16">
             {stats.map((stat, index) => (
               <Card key={index} className="glass border-white/20 text-center p-4 sm:p-6 hover:scale-105 transition-transform duration-300">
                 <CardContent className="p-0">
