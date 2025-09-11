@@ -7,60 +7,61 @@ import { BookingForm } from "@/components/BookingForm"
 
 const courses = [
   {
-    title: "Basic Baking Fundamentals",
-    description: "Learn essential techniques, ingredient knowledge, and basic recipes to start your baking journey.",
-    duration: "4 weeks",
+    title: "Fundamental Baker Course",
+    description: "Learn basics of baking, different types of cakes, and dry cakes. 100% VEGAN — no eggs used.",
+    duration: "1 month",
     students: "12",
     rating: "4.9",
     price: "₹24,999",
-    image: "https://images.unsplash.com/photo-1549931319-a545dcf3bc73?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+    image: "https://images.unsplash.com/photo-1549931319-a545dcf3bc73?auto=format&fit=crop&w=1000&q=80"
   },
   {
-    title: "Artisan Bread Making",
-    description: "Master the art of sourdough, focaccia, and traditional bread making techniques.",
-    duration: "6 weeks",
-    students: "8",
-    rating: "4.8",
-    price: "₹37,499",
-    image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-  },
-  {
-    title: "Pastry & Dessert Arts",
-    description: "Create stunning pastries, cakes, and desserts that will impress any audience.",
-    duration: "8 weeks",
+    title: "Intermediate Baker Course",
+    description: "Covers Fundamental Course + variety of chocolates, advanced cake designing, cookies, brownies, and laminated dough. 100% VEGAN — no eggs used.",
+    duration: "2 months",
     students: "10",
     rating: "4.9",
-    price: "₹49,999",
-    image: "https://images.unsplash.com/photo-1486427944299-d1955d23e34d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+    price: "₹39,999",
+    image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1000&q=80"
   },
   {
-    title: "Wedding Cake Design",
-    description: "Specialize in creating beautiful, multi-tier wedding cakes and special occasion desserts.",
-    duration: "10 weeks",
+    title: "Professional Baker Course",
+    description: "Covers Fundamental + Intermediate courses + two-tier cakes, nutritional baking, fondant cakes, bread baking, and doughnuts. 100% VEGAN — no eggs used.",
+    duration: "3 months",
+    students: "10",
+    rating: "5.0",
+    price: "₹54,999",
+    image: "https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=1000&q=80"
+  },
+  {
+    title: "Advanced Baker Course",
+    description: "Covers Fundamental, Intermediate, and Professional courses + buttercream, cheesecakes, advanced dry cakes, tarts & pies, advanced breads. 100% VEGAN — no eggs used.",
+    duration: "4 months",
+    students: "8",
+    rating: "5.0",
+    price: "₹69,999",
+    image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1000&q=80"
+  },
+  {
+    title: "Expert Baker Course",
+    description: "Covers Fundamental to Advanced courses + viennoiseries, shakes, mocktails, barista skills, ice cream, wraps, advanced cookies, pasta, and macarons. 100% VEGAN — no eggs used.",
+    duration: "5 months",
     students: "6",
     rating: "5.0",
-    price: "₹66,999",
-    image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+    price: "₹84,999",
+    image: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=1000&q=80"
   },
   {
-    title: "French Patisserie",
-    description: "Learn classical French techniques including croissants, macarons, and elegant pastries.",
-    duration: "12 weeks",
-    students: "8",
-    rating: "4.9",
-    price: "₹74,999",
-    image: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-  },
-  {
-    title: "Chocolate & Confections",
-    description: "Master chocolate tempering, truffle making, and artisan confectionery techniques.",
-    duration: "6 weeks",
-    students: "10",
-    rating: "4.8",
-    price: "₹45,999",
-    image: "https://images.unsplash.com/photo-1511381939415-e44015466834?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+    title: "Master Baker Course",
+    description: "Covers everything from Fundamental to Expert courses + industrial tours, industrial training, internship opportunities, and business mentorship. 100% VEGAN — no eggs used.",
+    duration: "6 months",
+    students: "6",
+    rating: "5.0",
+    price: "₹99,999",
+    image: "https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&w=1000&q=80"
   }
 ]
+
 
 export default function CoursesSection() {
   return (
