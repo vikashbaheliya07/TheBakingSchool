@@ -177,13 +177,10 @@ export default function AboutSection() {
                   Our Mission
                 </h3>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  To democratize professional baking education and make world-class culinary training accessible to everyone, 
-                  regardless of their background or experience level. We believe that everyone has the potential to create 
-                  something beautiful and delicious.
+                  Our mission is to provide comprehensive and accessible baking education that fosters creativity, empowers women and youth, equips students with the skills needed to excel in the baking industry.
                 </p>
                 <p className="text-gray-600 leading-relaxed">
-                  Since our founding in 2009, we&apos;ve been committed to nurturing creativity, building confidence, and 
-                  transforming passion into profession through comprehensive, hands-on baking education.
+                  We aim to create a supportive and inclusive learning environment, promote sustainable practices, and inspire a passion for baking that transcends borders, preparing our graduates to meet the growing demand for baking professionals around the world.
                 </p>
               </div>
               
@@ -193,13 +190,10 @@ export default function AboutSection() {
                   Our Vision
                 </h3>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  To be recognized as India&apos;s premier baking institute, known for excellence in education, 
-                  innovation in teaching methods, and success in student outcomes. We envision a future where 
-                  our graduates lead the culinary industry.
+                  To be a leading institution that empowers individuals through exceptional baking education, nurturing creativity, skill development, and professional growth, ultimately contributing to the Global Baking Industry with innovative and skilled professionals.
                 </p>
                 <p className="text-gray-600 leading-relaxed">
-                  We strive to create a global community of skilled bakers who carry forward the traditions 
-                  of fine baking while embracing modern techniques and sustainable practices.
+                  We strive to create a global community of skilled bakers who carry forward the traditions of fine baking while embracing modern techniques and sustainable practices.
                 </p>
               </div>
             </div>
@@ -454,13 +448,10 @@ export default function AboutSection() {
                   Crafting Culinary Dreams Since 2009
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Founded with a vision to make professional baking accessible to everyone, our school has grown 
-                  from a small kitchen studio to India&apos;s most trusted baking education institute. We combine 
-                  traditional techniques with modern innovation to create an unparalleled learning experience.
+                  Crafting Culinary Dreams Since 2023: Founded with a vision to be a leading institution that empowers individuals through exceptional Baking education, nurturing creativity, Skill development, and professional growth, ultimately contributing to the Global Baking Industry with Innovative and skilled professionals.
                 </p>
                 <p className="text-gray-600 leading-relaxed">
-                  Our state-of-the-art facilities, expert instructors, and comprehensive curriculum have helped 
-                  thousands of students transform their passion for baking into successful careers and fulfilling hobbies.
+                  We aim to create a supportive and inclusive learning environment, promote sustainable practices, and inspire a passion for baking that transcends borders, preparing our graduates to meet the growing demand for baking professionals around the world.
                 </p>
               </div>
 
