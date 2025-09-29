@@ -5,7 +5,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { BookingForm } from "@/components/BookingForm"
 
-const courses = [
+export const courses = [
   {
     title: "Fundamental Baker Course",
     description: "Learn basics of baking, different types of cakes, and dry cakes. 100% VEGAN — no eggs used.",

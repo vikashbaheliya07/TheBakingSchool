@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Star, Quote, MapPin, Calendar, Award } from "lucide-react"
 import { ChefHatIcon } from "@/components/icons/BakingIcons"
+import Image from "next/image"
 
 const successStories = [
   {
@@ -108,23 +109,11 @@ export default function SuccessStoriesPage() {
         <div className="absolute inset-0 bg-gradient-to-br from-yellow-50 to-blue-50"></div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             <Card className="glass border-white/20 text-center">
               <CardContent className="p-8">
-                <div className="text-4xl font-bold text-gradient mb-2">500+</div>
-                <div className="text-gray-600">Successful Graduates</div>
-              </CardContent>
-            </Card>
-            <Card className="glass border-white/20 text-center">
-              <CardContent className="p-8">
-                <div className="text-4xl font-bold text-gradient mb-2">95%</div>
-                <div className="text-gray-600">Job Placement Rate</div>
-              </CardContent>
-            </Card>
-            <Card className="glass border-white/20 text-center">
-              <CardContent className="p-8">
-                <div className="text-4xl font-bold text-gradient mb-2">150+</div>
-                <div className="text-gray-600">Businesses Started</div>
+                <div className="text-4xl font-bold text-gradient mb-2">300+</div>
+                <div className="text-gray-600">Successful Bakers</div>
               </CardContent>
             </Card>
             <Card className="glass border-white/20 text-center">
@@ -148,7 +137,7 @@ export default function SuccessStoriesPage() {
                 <CardContent className="p-8">
                   <div className="flex items-start gap-6 mb-6">
                     <div className="relative">
-                      <img 
+                      <Image
                         src={story.image} 
                         alt={story.name}
                         className="w-20 h-20 rounded-full object-cover group-hover:scale-110 transition-transform duration-300"

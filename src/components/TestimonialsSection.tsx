@@ -16,7 +16,7 @@ const getChefIcon = (name: string) => {
   return <ChefHatIcon className={`w-12 h-12 ${colors[colorIndex]}`} />
 }
 
-const testimonials = [
+export const testimonials = [
   {
     name: "Lovekaran Singh",
     role: "Home Baker",
