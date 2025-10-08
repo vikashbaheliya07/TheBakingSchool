@@ -15,11 +15,11 @@ const MOCK_USERS: Record<string, User & { password: string }> = {
   'admin': {
     id: '1',
     username: 'admin',
-    email: 'admin@bakingschool.com',
-    password: 'admin123',
+    email: 'ceo@thebakingschool.in',
+    password: 'Gaurav@8153',
     role: UserRole.ADMIN,
     permissions: ROLE_PERMISSIONS[UserRole.ADMIN],
-    createdAt: new Date('2024-01-01'),
+    createdAt: new Date('2025-10-08'),
     lastLogin: new Date(),
     isActive: true,
     profile: {

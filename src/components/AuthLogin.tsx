@@ -11,13 +11,6 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Alert, AlertDescription } from "@/components/ui/alert"
@@ -28,18 +21,10 @@ import {
   Eye,
   EyeOff,
   Shield,
-  Info,
-  Crown,
-  GraduationCap,
-  UserCheck,
   Settings
 } from "lucide-react"
 import { useAuth } from "@/contexts/AuthContext"
 import { UserRole } from "@/types/auth"
-
-const DEMO_ACCOUNTS = [
-  { username: 'admin', password: 'admin123', role: 'Website Administrator', icon: Shield, color: 'red' }
-]
 
 export function AuthLogin() {
   const { user, isAuthenticated, login, logout, isLoading, getRoleDisplayName, getRoleColor } = useAuth()
@@ -73,10 +58,6 @@ export function AuthLogin() {
     setError("")
   }
 
-  const handleQuickLogin = (username: string, password: string) => {
-    setCredentials({ username, password })
-  }
-
   const getRoleIcon = (role: UserRole) => {
     const icons = {
       [UserRole.GUEST]: User,
@@ -85,7 +66,6 @@ export function AuthLogin() {
     return icons[role] || User
   }
 
-  // If user is authenticated, show user info and logout
   if (isAuthenticated && user) {
     const RoleIcon = getRoleIcon(user.role)
     const roleColor = getRoleColor()
@@ -173,12 +153,11 @@ export function AuthLogin() {
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2">
             <Shield className="w-5 h-5 text-blue-600" />
-            Sign In to Baking School
+            Sign In to Baking School Admin
           </DialogTitle>
         </DialogHeader>
 
         <div className="space-y-6">
-          {/* Login Form */}
           <Card>
             <CardHeader>
               <CardTitle className="text-lg">Enter Your Credentials</CardTitle>
@@ -266,49 +245,6 @@ export function AuthLogin() {
                   </Button>
                 </div>
               </form>
-            </CardContent>
-          </Card>
-
-          {/* Demo Accounts */}
-          <Card>
-            <CardHeader>
-              <CardTitle className="text-lg flex items-center gap-2">
-                <Info className="w-5 h-5 text-blue-600" />
-                Demo Accounts
-              </CardTitle>
-            </CardHeader>
-
-            <CardContent>
-              <div className="space-y-2">
-                {DEMO_ACCOUNTS.map((account) => {
-                  const IconComponent = account.icon
-                  return (
-                    <Button
-                      key={account.username}
-                      variant="outline"
-                      className="w-full justify-start gap-3 h-auto p-3"
-                      onClick={() => handleQuickLogin(account.username, account.password)}
-                      disabled={loginLoading}
-                    >
-                      <IconComponent className={`w-5 h-5 text-${account.color}-600`} />
-                      <div className="text-left flex-1">
-                        <div className="font-medium">{account.role}</div>
-                        <div className="text-xs text-gray-500">
-                          {account.username} / {account.password}
-                        </div>
-                      </div>
-                    </Button>
-                  )
-                })}
-              </div>
-
-              <Alert className="mt-4 border-blue-200 bg-blue-50">
-                <Info className="h-4 w-4 text-blue-600" />
-                <AlertDescription className="text-blue-800 text-xs">
-                  These are demo accounts for testing different permission levels.
-                  In production, use secure authentication methods.
-                </AlertDescription>
-              </Alert>
             </CardContent>
           </Card>
         </div>
