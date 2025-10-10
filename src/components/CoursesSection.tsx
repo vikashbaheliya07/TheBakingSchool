@@ -124,7 +124,7 @@ export default function CoursesSection() {
                   {course.description}
                 </p>
                 
-                <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
+                <div className="flex flex-col sm:flex-row items-center justify-between gap-3">A
                   <BookingForm preSelectedCourse={course.title}>
                     <Button className="gradient-yellow-blue text-white hover:scale-105 transition-transform duration-300 w-full sm:w-auto text-sm sm:text-base px-4 py-2">
                       Enroll Now
